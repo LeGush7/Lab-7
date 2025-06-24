@@ -56,7 +56,8 @@ try:
         else:
             print("Произношение: аудио отсутствует")
     else:
-        print("Транскрипция и произношение: информация отсутствует")
+        print("Транскрипция: информация отсутствует")
+        print("Произношение: информация отсутствует")
 
     if 'shortdef' in first_entry and len(first_entry['shortdef']) > 0:
         shortdef = re.sub(r'{.*?}', '', first_entry['shortdef'][0])
